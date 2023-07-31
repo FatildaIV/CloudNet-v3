@@ -36,7 +36,7 @@ import org.jetbrains.annotations.UnknownNullability;
 
 public final class MySQLDatabaseProvider extends SQLDatabaseProvider {
 
-  private static final String CONNECT_URL_FORMAT = "jdbc:mysql://%s:%d/%s?serverTimezone=UTC";
+  private static final String CONNECT_URL_FORMAT = "jdbc:mariadb://%s:%d/%s?serverTimezone=UTC";
 
   private final MySQLConfiguration config;
   private volatile HikariDataSource hikariDataSource;
@@ -57,7 +57,7 @@ public final class MySQLDatabaseProvider extends SQLDatabaseProvider {
     hikariConfig.setJdbcUrl(String.format(
       CONNECT_URL_FORMAT,
       endpoint.address().host(), endpoint.address().port(), endpoint.database()));
-    hikariConfig.setDriverClassName("com.mysql.cj.jdbc.Driver");
+    hikariConfig.setDriverClassName("org.mariadb.jdbc.Driver");
     hikariConfig.setUsername(this.config.username());
     hikariConfig.setPassword(this.config.password());
 

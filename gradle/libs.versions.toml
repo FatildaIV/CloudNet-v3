@@ -33,7 +33,7 @@ h2 = "1.4.197" # do not update, leads to database incompatibility
 xodus = "2.0.1"
 mongodb = "4.9.1"
 hikariCp = "5.0.1"
-mysqlConnector = "8.0.33"
+mysqlConnector = "3.1.4"
 
 # general
 asm = "9.5"
@@ -155,7 +155,7 @@ h2 = { group = "com.h2database", name = "h2", version.ref = "h2" }
 hikariCp = { group = "com.zaxxer", name = "HikariCP", version.ref = "hikariCp" }
 mongodb = { group = "org.mongodb", name = "mongodb-driver-sync", version.ref = "mongodb" }
 xodus = { group = "org.jetbrains.xodus", name = "xodus-environment", version.ref = "xodus" }
-mysqlConnector = { group = "com.mysql", name = "mysql-connector-j", version.ref = "mysqlConnector" }
+mysqlConnector = { group = "org.mariadb.jdbc", name = "mariadb-java-client", version.ref = "mysqlConnector" }
 
 # platform api
 nukkitX = { group = "cn.nukkit", name = "nukkit", version.ref = "nukkitX" }
@@ -176,8 +176,8 @@ vault = { group = "com.github.MilkBowl", name = "VaultAPI", version.ref = "vault
 modLauncher = { group = "cpw.mods", name = "modlauncher", version.ref = "modlauncher" }
 bungeecordChat = { group = "net.md-5", name = "bungeecord-chat", version.ref = "bungeecord" }
 placeholderApi = { group = "me.clip", name = "placeholderapi", version.ref = "placeholderApi" }
-npcLib = { group = "com.github.juliarn.NPC-Lib", name = "npc-lib-bukkit", version.ref = "npcLib" }
-npcLibLabymod = { group = "com.github.juliarn.NPC-Lib", name = "npc-lib-labymod", version.ref = "npcLib" }
+npcLib = { group = "com.github.juliarn.npc-lib", name = "npc-lib-bukkit", version.ref = "npcLib" }
+npcLibLabymod = { group = "com.github.juliarn.npc-lib", name = "npc-lib-labymod", version.ref = "npcLib" }
 
 # fabric platform special dependencies
 minecraft = { group = "com.mojang", name = "minecraft", version.ref = "minecraft" }
